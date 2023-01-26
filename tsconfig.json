@@ -18,6 +18,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    "types": ["jest", "styled-components-react-native"],
     "jsx": "react-jsx"
   },
   "include": [
