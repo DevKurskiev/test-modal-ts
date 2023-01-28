@@ -59,19 +59,19 @@ const Form: FC<IProps> = ({ header, message, setModalShow }) => {
       <Exit onClick={() => setModalShow(false)}>Закрыть</Exit>
       <Header>{header}</Header>
       <ItemNumber
-        onChange={(e: React.ChangeEvent<any>): void => handleChangedData(e, "number")}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>): void => handleChangedData(e, "number")}
         mask="+7(999) 999-99-99"
         placeholder="Номер телефона"
         value={data.number}
       />
       <Item
-        onChange={(e: React.ChangeEvent<any>): void => handleChangedData(e, "name")}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>): void => handleChangedData(e, "name")}
         placeholder="Имя"
         type="text"
         value={data.name}
       />
       <ItemMessage
-        onChange={(e: React.ChangeEvent<any>): void => handleChangedData(e, "message")}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>): void => handleChangedData(e, "message")}
         placeholder="Сообщение"
         value={data.message}
       />
